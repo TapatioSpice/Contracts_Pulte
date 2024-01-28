@@ -35,8 +35,13 @@ def create_gui(data):
     else:
         st.sidebar.success("You're in! You can close the sidebar on the top right.")
 
-        # Show a message in the main content area
-        st.write("You're in! You can close the sidebar on the top right.")
+        # Show a temporary success message
+        success_message = st.empty()
+        success_message.success("You're in! You can close the sidebar on the top right.")
+        st.balloons()
+
+        # Clear the success message after 5 seconds
+        success_message.empty()
 
     communities = data['Community'].unique()
 
