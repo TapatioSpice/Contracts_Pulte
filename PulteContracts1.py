@@ -35,6 +35,9 @@ def create_gui(data):
     else:
         st.sidebar.success("You're in! You can close the sidebar on the top right.")
 
+        # Show a message in the main content area
+        st.write("You're in! You can close the sidebar on the top right.")
+
     communities = data['Community'].unique()
 
     community_col, series_col, button_col = st.columns([2, 2, 1])
