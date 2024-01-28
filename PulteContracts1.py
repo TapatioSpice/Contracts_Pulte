@@ -55,7 +55,7 @@ def export_to_pdf(data, community, series):
 
 # Function to create and display the GUI
 def create_gui(data):
-    st.title("Pulte Contracts")
+    st.title("Pulte Contracts App")
 
     # Password protection in the sidebar
     password_input = st.sidebar.text_input("Enter password:", type="password")
@@ -117,9 +117,6 @@ footer = """
 
 # Create and display the GUI
 create_gui(load_data())
-
-# Add the footer
-st.markdown(footer)
 
 # Add the footer
 st.markdown(footer)
